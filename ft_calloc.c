@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rft_strdupr.c                                      :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/29 14:38:54 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/29 20:30:20 by bahkaya          ###   ########.fr       */
+/*   Created: 2025/05/31 18:33:39 by bahkaya           #+#    #+#             */
+/*   Updated: 2025/05/31 21:44:25 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-char *ft_strdup(const char *s)
+
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	const char *ptr;
-	
-	ptr = malloc(sizeof(char) * 1);
+	size_t i;
+
+	size_t *ptr = malloc(sizeof(void *) * (ft_strlen(nmemb));
+	i = 0;
+	if (!ptr)
+		return (NULL);
+	while (ptr[i] != '\0')
+	{
+		ptr[i] = 0;
+		i++;
+	}
+	return (ptr);
 }
-int main()
+int	main(void)
 {
-	
-	 char *c = "d";
-	
-	printf("%s", ft_strdup(c));
-	free(c);
+	int *src = calloc(2,2);
+	printf("%ls", src);
+	free(src);
 }

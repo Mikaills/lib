@@ -6,7 +6,7 @@
 #    By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/26 16:24:29 by bahkaya           #+#    #+#              #
-#    Updated: 2025/05/29 15:08:34 by bahkaya          ###   ########.fr        #
+#    Updated: 2025/05/31 16:53:36 by bahkaya          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,16 +31,16 @@ SOURCE = ft_isalnum.c \
 OBJECTS = $(SOURCE:.c=.o)
 
 
-
 all: $(NAME) clean
 $(NAME): $(OBJECTS)
 	ar rc -o $(NAME) $(OBJECTS)
 
 
-#cc: 
-#	$(CC) $(CFLAGS) -o $(P) main.c $(NAME)
-#run:
-#	./$(P)
+cc: $(P)
+$(P): rft_memset.c
+	$(CC) $(CFLAGS) -o $(P) rft_memset.c
+run:
+	./$(P)
 
 	
 clean:
@@ -52,7 +52,11 @@ fclean:	clean
 
 re: fclean all
 
-#pclean: $(P)
-# rm -rf $(P)
+vscode: 
+	code .
+
+
+pclean: $(P)
+	rm -rf $(P)
 
 .PHONY: all clean fclean re

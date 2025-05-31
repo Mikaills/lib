@@ -6,9 +6,11 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 19:18:03 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/29 17:31:47 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 18:32:25 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -28,14 +30,3 @@ char	*ft_strrchr(const char *s, int c)
 		i--;
 	}
 }
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%s", ft_strrchr("denemen", 'n'));
-}
-/*int main()
-{
-	printf("%s\n", ft_strrchr("deneme", 'n'));
-	printf("%s", strrchr("deneme", 'n'));
-}*/

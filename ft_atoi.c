@@ -6,15 +6,17 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/27 20:19:14 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/28 19:13:54 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 17:05:01 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	result;
-	int	convert;
+	int		i;
+	int		result;
+	int		convert;
 
 	result = 0;
 	convert = 1;
@@ -34,10 +36,4 @@ int	ft_atoi(const char *nptr)
 		i++;
 	}
 	return (result * convert);
-}
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d", ft_atoi("-423433590"));
 }

@@ -6,11 +6,13 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 11:56:48 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/28 11:58:05 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 17:09:24 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+
+int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 	{

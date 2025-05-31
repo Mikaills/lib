@@ -6,9 +6,11 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 11:44:13 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/28 11:47:03 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 17:09:21 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

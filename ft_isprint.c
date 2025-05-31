@@ -6,9 +6,11 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 12:01:26 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/28 12:02:36 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 17:05:46 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

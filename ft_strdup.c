@@ -1,40 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rft_memset.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/27 12:54:47 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/31 20:36:04 by bahkaya          ###   ########.fr       */
+/*   Created: 2025/05/29 14:38:54 by bahkaya           #+#    #+#             */
+/*   Updated: 2025/05/31 21:29:54 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+char	*ft_strdup(const char *s)
 {
-	unsigned char	*ptr;
-	size_t	i;
+	char	*ptr;
+	int		i;
 
-	ptr = s;
 	i = 0;
-	
-	while (i < n)
+	ptr = malloc(sizeof(char) * (ft_strlen(s) + 1));
+	if (!ptr)
+		return (NULL);
+	while (s[i] != '\0')
 	{
-		ptr[i] = (unsigned char)c;
+		ptr[i] = s[i];
 		i++;
 	}
-	return (s);
+	ptr[i] = '\0';
+	return (ptr);
 }
-int	main(void)
-{
-	/*int str[] = {1, 255, 255, 255};
-	memset(str, 255, 1);
-	memset(str, 1, 1);
-	printf("%d\n%d\n", str[0], str[1]);*/
 
-	char ptr[] = "deneme";
-	ft_memset(ptr , 'a', 50);
-	printf("%s\n", ptr);
-}
+
+
+typedef struct s_list{
+	
+	int a;
+	char b;
+
+}	t_list;
+
+
+
+typedef struct s_list{
+
+	char b;
+	int a;
+
+}	t_list;

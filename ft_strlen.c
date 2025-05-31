@@ -6,18 +6,18 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 11:48:16 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/29 15:08:56 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/05/31 17:08:08 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i;
-	
+	size_t	i;
+
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
