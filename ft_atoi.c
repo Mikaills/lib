@@ -23,7 +23,7 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	if (nptr[i] == '-')
+	if (nptr[i] == '-') // Hatalı olabilir + için bakmıyorsun sonrasında patlar örnk:  "     +31" aşşada patlar gibi.
 	{
 		convert = -1;
 		i++;
