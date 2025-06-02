@@ -6,7 +6,7 @@
 /*   By: bahkaya <bahkaya@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 18:33:39 by bahkaya           #+#    #+#             */
-/*   Updated: 2025/05/31 21:44:25 by bahkaya          ###   ########.fr       */
+/*   Updated: 2025/06/02 14:04:36 by bahkaya          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t i;
 
-	size_t *ptr = malloc(sizeof(void *) * (ft_strlen(nmemb));
+	size_t *ptr = malloc(sizeof(void *) * (ft_strlen(nmemb) + 1));
 	i = 0;
 	if (!ptr)
 		return (NULL);
